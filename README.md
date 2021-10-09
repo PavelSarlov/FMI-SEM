@@ -1,2 +1,2 @@
-# FMI-SEM
-FMI - Statistics and Empirical Methods
+# FMI-Statistics-and-Empirical-Methods
+Materials, homeworks and stuff during the course.
