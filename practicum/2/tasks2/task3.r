@@ -7,7 +7,6 @@ colnames(AAPL) = sub("AAPL.", "", colnames(AAPL))
 View(AAPL)
 
 attach(AAPL)
-
 detach(AAPL)
 
 # Пробвайте да направите някаква графика на данните
