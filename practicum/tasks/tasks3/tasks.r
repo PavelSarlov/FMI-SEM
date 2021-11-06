@@ -8,25 +8,30 @@ View(survey)
 # а) Случайно избран човек да се окаже редовен пушач.
 
 sum(Smoke=='Regul', na.rm=TRUE)/length(Smoke)
+prop.table(table(Smoke))['Regul']
 
 # б) Случайно избран човек да се окаже редовно пушещ мъж.
 
 sum(Smoke=='Regul' & Sex=="Male", na.rm = TRUE)/length(Smoke)
+prop.table(table(Smoke, Sex))['Regul', 'Male']
 
 # в) Случайно избран мъж да се окаже редовен пушач.
 
 sum(Smoke=='Regul' & Sex=="Male", na.rm = TRUE)/sum(Sex=="Male", na.rm = TRUE)
+prop.table(table(Smoke[Sex=='Male']))['Regul']
+prop.table(table(Smoke, Sex), 2)['Regul', 'Male']
 
 # г) Случайно избран редовен пушач да се окаже мъж.
 
 sum(Smoke=='Regul' & Sex=="Male", na.rm = TRUE)/sum(Smoke=='Regul', na.rm = TRUE)
-
+prop.table(table(Sex[Smoke=="Regul"]))['Male']
+prop.table(table(Smoke, Sex), 1)['Regul', 'Male']
 
 # Зад. 2) Представете графично данните за тютюнопушенето на студентите.
 #         А също и за тютюнопушенето в зависимост от пола.
 
-pie(table(Smoke))
-barplot(table(Sex))
+pie(table(Smoke), main="Smokers")
+barplot(table(Sex, Smoke), beside=TRUE, col=c("pink","blue"), legend.text = TRUE, main="Smokers by gender")
 
 # Зад. 3) Пресметнете оценки - средно, медиана, квартили, стандартно отклонение и т.н. за височината на студентите.
 #         Направете отделни изчисления за мъжете и за жените. Каква част от студентите се различават от средната
@@ -37,12 +42,14 @@ summary(Height, na.rm=TRUE)
 sd(Height, na.rm=TRUE)
 
 # Мъже
-mean(survey$Height[Sex=="Male"], na.rm=TRUE)
-fivenum(survey$Height[Sex=="Male"], na.rm=TRUE)
+mean(Height[Sex=="Male"], na.rm=TRUE)
+fivenum(Height[Sex=="Male"], na.rm=TRUE)
 
 # Жени
-mean(survey$Height[Sex=="Female"], na.rm=TRUE)
-fivenum(survey$Height[Sex=="Female"], na.rm=TRUE)
+mean(Height[Sex=="Female"], na.rm=TRUE)
+fivenum(Height[Sex=="Female"], na.rm=TRUE)
+
+table(Height, Sex)
 
 sum(abs(Height-mean(Height, na.rm = TRUE))<=1, na.rm = TRUE)/length(Height)
 
