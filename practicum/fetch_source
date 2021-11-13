@@ -1,3 +1,0 @@
-#!/bin/bash
-
-wget 'https://learn.fmi.uni-sofia.bg/pluginfile.php/361833/mod_resource/content/1/VerzaniProblems.html?embed=1' --header 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0' --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' --header 'Accept-Language: en-US,en;q=0.5' --header 'Connection: keep-alive' --header 'Referer: https://learn.fmi.uni-sofia.bg/mod/resource/view.php?id=217368' --header 'Cookie: MoodleSession=50f7270526a440b344904045c7a8fb0c' --header 'Upgrade-Insecure-Requests: 1' --header 'Sec-Fetch-Dest: iframe' --header 'Sec-Fetch-Mode: navigate' --header 'Sec-Fetch-Site: same-origin' --header 'Sec-GPC: 1' --header 'TE: trailers'
