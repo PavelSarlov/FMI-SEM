@@ -1,0 +1,18 @@
+wget 'https://learn.fmi.uni-sofia.bg/pluginfile.php/361864/mod_resource/content/1/DiscreteRandomData.html' \
+  --header 'authority: learn.fmi.uni-sofia.bg' \
+  --header 'cache-control: max-age=0' \
+  --header 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
+  --header 'sec-ch-ua-mobile: ?0' \
+  --header 'sec-ch-ua-platform: "Windows"' \
+  --header 'dnt: 1' \
+  --header 'upgrade-insecure-requests: 1' \
+  --header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.29' \
+  --header 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+  --header 'sec-fetch-site: none' \
+  --header 'sec-fetch-mode: navigate' \
+  --header 'sec-fetch-user: ?1' \
+  --header 'sec-fetch-dest: document' \
+  --header 'accept-language: en-US,en;q=0.9,fr;q=0.8,bg;q=0.7,pt;q=0.6,ru;q=0.5,sk;q=0.4,mt;q=0.3' \
+  --header 'cookie: MoodleSession=a96458433eaee5a5b3d2e0b97e8216ad' \
+  --header 'if-none-match: "3354a32205dc678cbb38df44520da4b8136fce7d-gzip"' \
+  --header 'if-modified-since: Sat, 30 Oct 2021 13:18:31 GMT'
