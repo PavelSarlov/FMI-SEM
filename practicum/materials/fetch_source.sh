@@ -1,4 +1,4 @@
-wget 'https://learn.fmi.uni-sofia.bg/pluginfile.php/366951/mod_resource/content/2/VerzaniProblems.html' \
+wget 'https://learn.fmi.uni-sofia.bg/pluginfile.php/366957/mod_resource/content/2/RegressionAnalysis.html' 'https://learn.fmi.uni-sofia.bg/pluginfile.php/368307/mod_resource/content/1/VerzaniProblems.html' 'https://learn.fmi.uni-sofia.bg/pluginfile.php/366958/mod_resource/content/3/MultipleLinearRegression.html' 'https://learn.fmi.uni-sofia.bg/pluginfile.php/368308/mod_resource/content/1/VerzaniProblems.html' 'https://learn.fmi.uni-sofia.bg/pluginfile.php/366960/mod_resource/content/2/ANOVA.html' 'https://learn.fmi.uni-sofia.bg/pluginfile.php/368309/mod_resource/content/1/VerzaniProblems.html' \
   --header 'authority: learn.fmi.uni-sofia.bg' \
   --header 'cache-control: max-age=0' \
   --header 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Microsoft Edge";v="96"' \
